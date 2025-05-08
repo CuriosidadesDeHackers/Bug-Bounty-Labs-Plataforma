@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Bug Bounty Labs | Laboratorios de Server-Side Template Injection (SSTI)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bug Bounty Labs: Explora nuestros laboratorios de Server-Side Template Injection (SSTI) para aprender a identificar, explotar y mitigar vulnerabilidades SSTI en diferentes niveles de dificultad.">
+    <meta property="og:title" content="Bug Bounty Labs | Laboratorios de Server-Side Template Injection (SSTI)" />
+    <meta property="og:description" content="Bug Bounty Labs: Explora nuestros laboratorios de Server-Side Template Injection (SSTI) para aprender a identificar, explotar y mitigar vulnerabilidades SSTI en diferentes niveles de dificultad." />
+    <meta property="og:image" content="https://bugbountylabs.com/wp-content/uploads/2025/01/Imagen-de-WhatsApp-2025-01-11-a-las-10.53.43_8c6b2f14.jpg" />
+    <meta property="og:url" content="https://bugbountylabs.com/" />
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bug Bounty Labs | Laboratorios de Server-Side Template Injection (SSTI)">
+    <meta name="twitter:description" content="Bug Bounty Labs: Explora nuestros laboratorios de Server-Side Template Injection (SSTI) para aprender a identificar, explotar y mitigar vulnerabilidades SSTI en diferentes niveles de dificultad.">
+    <meta name="twitter:image" content="https://bugbountylabs.com/wp-content/uploads/2025/01/Imagen-de-WhatsApp-2025-01-11-a-las-10.53.43_8c6b2f14.jpg">
+    <link rel="icon" href="https://bugbountylabs.com/wp-content/uploads/2025/01/Imagen-de-WhatsApp-2025-01-11-a-las-10.53.43_8c6b2f14.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Bounty Labs | Laboratorios de Server-Side Template Injection (SSTI)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Bug Bounty Labs</h1>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn active">Vulnerabilidades</a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('xss') }}">Cross-Site Scripting (XSS)</a>
+                        <a href="{{ url_for('sqli') }}">SQL Injection</a>
+                        <a href="{{ url_for('cors') }}">CORS Misconfiguration</a>
+                        <a href="{{ url_for('ssti') }}" class="active">Server-Side Template Injection</a>
+                        <a href="xxe.html">XML External Entity</a>
+                        <a href="rce.html">Remote Code Execution</a>
+                        <a href="subdomain.html">Subdomain Takeover</a>
+                        <a href="cache.html">Cache Poisoning</a>
+                        <a href="ssrf.html">Server-Side Request Forgery</a>
+                        <a href="idor.html">IDOR</a>
+                    </div>
+                </li>
+                <li><a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="vulnerability-header">
+            <h1>Bug Bounty Labs | Laboratorios de Server-Side Template Injection (SSTI)</h1>
+            <p>Explora nuestros laboratorios de Server-Side Template Injection y aprende a identificar, explotar y mitigar diferentes tipos de vulnerabilidades SSTI en un entorno seguro y controlado.</p>
+        </section>
+
+        <section class="labs-section" id="principiante">
+            <h2>Nivel Principiante</h2>
+            <div class="labs-grid">
+                <div class="lab-card">
+                    <h3>SSTI Básico</h3>
+                    <p>Aprende los fundamentos de la inyección en plantillas del lado del servidor con este laboratorio introductorio.</p>
+                    <div class="lab-meta">
+                        <span class="difficulty beginner">Principiante</span>
+                        <span class="points">100 puntos</span>
+                    </div>
+                    <div class="lab-actions">
+                        <button class="btn download-btn" data-lab="ssti-basic">Descargar Lab</button>
+                        <button class="btn writeup-btn" data-writeup="ssti-basic">Ver Write-up</button>
+                    </div>
+                </div>
+
+                <div class="lab-card">
+                    <h3>SSTI en Jinja2</h3>
+                    <p>Descubre cómo funciona la inyección en plantillas Jinja2 en un entorno controlado.</p>
+                    <div class="lab-meta">
+                        <span class="difficulty beginner">Principiante</span>
+                        <span class="points">150 puntos</span>
+                    </div>
+                    <div class="lab-actions">
+                        <button class="btn download-btn" data-lab="ssti-jinja2">Descargar Lab</button>
+                        <button class="btn writeup-btn" data-writeup="ssti-jinja2">Ver Write-up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="labs-section" id="avanzado">
+            <h2>Nivel Avanzado</h2>
+            <div class="labs-grid">
+                <div class="lab-card">
+                    <h3>SSTI con Ejecución de Código</h3>
+                    <p>Aprende técnicas avanzadas para ejecutar código arbitrario mediante SSTI.</p>
+                    <div class="lab-meta">
+                        <span class="difficulty advanced">Avanzado</span>
+                        <span class="points">300 puntos</span>
+                    </div>
+                    <div class="lab-actions">
+                        <button class="btn download-btn" data-lab="ssti-code-execution">Descargar Lab</button>
+                        <button class="btn writeup-btn" data-writeup="ssti-code-execution">Ver Write-up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="labs-section" id="profesional">
+            <h2>Nivel Profesional</h2>
+            <div class="labs-grid">
+                <div class="lab-card">
+                    <h3>SSTI en Aplicaciones Complejas</h3>
+                    <p>Explota SSTI en el contexto de una aplicación compleja con múltiples capas de seguridad.</p>
+                    <div class="lab-meta">
+                        <span class="difficulty professional">Profesional</span>
+                        <span class="points">500 puntos</span>
+                    </div>
+                    <div class="lab-actions">
+                        <button class="btn download-btn" data-lab="ssti-complex-app">Descargar Lab</button>
+                        <button class="btn writeup-btn" data-writeup="ssti-complex-app">Ver Write-up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="labs-section" id="experto">
+            <h2>Nivel Experto</h2>
+            <div class="labs-grid">
+                <div class="lab-card">
+                    <h3>SSTI con Bypass de Sandbox</h3>
+                    <p>Desafío extremo de bypass de sandbox en entornos de plantillas.</p>
+                    <div class="lab-meta">
+                        <span class="difficulty expert">Experto</span>
+                        <span class="points">1000 puntos</span>
+                    </div>
+                    <div class="lab-actions">
+                        <button class="btn download-btn" data-lab="ssti-sandbox-bypass">Descargar Lab</button>
+                        <button class="btn writeup-btn" data-writeup="ssti-sandbox-bypass">Ver Write-up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="writeup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="writeup-content"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Bug Bounty Labs</h3>
+                    <p>Plataforma líder en entrenamiento de seguridad web</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Nuetras Plataformas</h3>
+                    <ul>
+                        <li><a href="https://thehackerslabs.com/">The Hackers Labs</a></li>
+                        <li><a href="https://dockerlabs.es/">Docker Labs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        </a>
+                        <a href="https://t.me/BugBountyLabs" target="_blank" class="social-btn" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://x.com/bugbounty_labs" target="_blank" class="social-btn" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/bug-bounty-labs" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bugbountylabs" target="_blank" class="social-btn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.gg/cbWzNQd8JQ" target="_blank" class="social-btn" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bug Bounty Labs. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
