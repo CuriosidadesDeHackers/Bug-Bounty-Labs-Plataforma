@@ -1,0 +1,3 @@
+{"lab_id": "xss-stored-basic", "autor": "pepe", "url": "https://poc.curiosidadesdehackers.com/", "fecha": "2025-05-09T13:35:25.790Z", "timestamp": "2025-05-09 15:35:25"}
+{"lab_id": "cmdi-basic", "autor": "ssss", "url": "https://poc.curiosidadesdehackers.com/", "fecha": "2025-05-09T13:36:22.639Z", "timestamp": "2025-05-09 15:36:22"}
+{"lab_id": "csrf-forgery", "autor": "pepe", "url": "https://pepe.com", "fecha": "2025-05-09 16:03:20"}

@@ -1,0 +1,434 @@
+[
+    {
+        "nombre": "Login",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 100,
+        "lab_id": "xss-basic",
+        "enlace": "/static/maquinas/bugbountylabs_login.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Login",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/login-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Login",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/login-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Reflection",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 150,
+        "lab_id": "xss-stored-basic",
+        "enlace": "/static/maquinas/bugbountylabs_reflection.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Reflection",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/reflection-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Reflection",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/reflection-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "DogShow",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 100,
+        "lab_id": "xss-basic",
+        "enlace": "/static/maquinas/bugbountylabs_dogshow.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de DogShow",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/dogshow-guia"
+            },
+            {
+                "titulo": "Explicación técnica de DogShow",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/dogshow-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Escape",
+        "autor": "Zunderrub",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 150,
+        "lab_id": "xss-stored-basic",
+        "enlace": "/static/maquinas/bugbountylabs_escape.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Escape",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/escape-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Escape",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/escape-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Double",
+        "autor": "Santitub",
+        "nivel": "profesional",
+        "dificultad": "professional",
+        "puntos": 100,
+        "lab_id": "xss-basic",
+        "enlace": "/static/maquinas/bugbountylabs_double.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Double",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/double-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Double",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/double-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "TrrorLabs",
+        "autor": "Trr0r",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 150,
+        "lab_id": "xss-stored-basic",
+        "enlace": "/static/maquinas/bugbountylabs_trr0rlabs.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de TrrorLabs",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/trrorlabs-guia"
+            },
+            {
+                "titulo": "Explicación técnica de TrrorLabs",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/trrorlabs-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "XSSaS",
+        "autor": "ArchyXsec",
+        "nivel": "experto",
+        "dificultad": "expert",
+        "puntos": 100,
+        "lab_id": "xss-basic",
+        "enlace": "https://mega.nz/file/CzwXVCIa#tQWaxRKb-sMUrFFoS_d7s1CSTGEzqAN_xpOroKUJb_o",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de XSSaS",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/xssas-guia"
+            },
+            {
+                "titulo": "Explicación técnica de XSSaS",
+                "url": "https://writeups.bugbountylabs.com/xss-basic/xssas-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Frontend",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 150,
+        "lab_id": "xss-stored-basic",
+        "enlace": "/static/maquinas/bugbountylabs_frontend.zip",
+        "categoria": "xss",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Frontend",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/frontend-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Frontend",
+                "url": "https://writeups.bugbountylabs.com/xss-stored-basic/frontend-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "ConnectX",
+        "autor": "Trr0r",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "sqli-basic",
+        "enlace": "https://mega.nz/file/nvgiHBLA#4QRluMSAZaktp3J8bwKAkvppVkVjq0V6Cgkunsow-kQ",
+        "categoria": "sqli",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de ConnectX",
+                "url": "https://writeups.bugbountylabs.com/sqli-basic/connectx-guia"
+            },
+            {
+                "titulo": "Explicación técnica de ConnectX",
+                "url": "https://writeups.bugbountylabs.com/sqli-basic/connectx-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "NeoMarket",
+        "autor": "Trr0r",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 150,
+        "lab_id": "sqli-advanced",
+        "enlace": "https://mega.nz/file/ym4FiQqS#3bJieL3WR1PgBTZDuQgNjIoSY-GwGxL6EjPPpF_mOR8",
+        "categoria": "sqli",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de NeoMarket",
+                "url": "https://writeups.bugbountylabs.com/sqli-advanced/neomarket-guia"
+            },
+            {
+                "titulo": "Explicación técnica de NeoMarket",
+                "url": "https://writeups.bugbountylabs.com/sqli-advanced/neomarket-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "TemplateX",
+        "autor": "Z3r0day",
+        "nivel": "profesional",
+        "dificultad": "professional",
+        "puntos": 200,
+        "lab_id": "ssti-basic",
+        "enlace": "/static/maquinas/bugbountylabs_templatex.zip",
+        "categoria": "ssti",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de TemplateX",
+                "url": "https://writeups.bugbountylabs.com/ssti-basic/templatex-guia"
+            },
+            {
+                "titulo": "Explicación técnica de TemplateX",
+                "url": "https://writeups.bugbountylabs.com/ssti-basic/templatex-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Inj3ctlab",
+        "autor": "Lenam",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "ssti-basic",
+        "enlace": "/static/maquinas/BugBountyLbas_inj3ctlab.zip",
+        "categoria": "ssti",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Inj3ctlab",
+                "url": "https://writeups.bugbountylabs.com/ssti-basic/inj3ctlab-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Inj3ctlab",
+                "url": "https://writeups.bugbountylabs.com/ssti-basic/inj3ctlab-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Entity",
+        "autor": "Zunderrub",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "xxe-basic",
+        "enlace": "/static/maquinas/bugbountylabs_entity.zip",
+        "categoria": "xxe",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Entity",
+                "url": "https://writeups.bugbountylabs.com/xxe-basic/entity-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Entity",
+                "url": "https://writeups.bugbountylabs.com/xxe-basic/entity-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "CorsMisconf",
+        "autor": "WebPwn",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 150,
+        "lab_id": "cors-token",
+        "enlace": "/static/maquinas/bugbountylabs_corsmisconf.zip",
+        "categoria": "cors",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de CorsMisconf",
+                "url": "https://writeups.bugbountylabs.com/cors-token/corsmisconf-guia"
+            },
+            {
+                "titulo": "Explicación técnica de CorsMisconf",
+                "url": "https://writeups.bugbountylabs.com/cors-token/corsmisconf-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Corsy",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 150,
+        "lab_id": "cors-misconfig",
+        "enlace": "/static/maquinas/bugbountylabs_corsy.zip",
+        "categoria": "cors",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Corsy",
+                "url": "https://writeups.bugbountylabs.com/cors-misconfig/corsy-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Corsy",
+                "url": "https://writeups.bugbountylabs.com/cors-misconfig/corsy-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Forgery",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "csrf-forgery",
+        "enlace": "https://mega.nz/file/zq4EyBCL#647eEQ27EUF-vgFyeZ0csoB0nXolRtPMgwprOy7UlYA",
+        "categoria": "csrf",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Forgery",
+                "url": "https://writeups.bugbountylabs.com/csrf-forgery/forgery-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Forgery",
+                "url": "https://writeups.bugbountylabs.com/csrf-forgery/forgery-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Access",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "bac-basic",
+        "enlace": "/static/maquinas/bugbountylabs_access.zip",
+        "categoria": "bac",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Access",
+                "url": "https://writeups.bugbountylabs.com/bac-basic/access-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Access",
+                "url": "https://writeups.bugbountylabs.com/bac-basic/access-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Listing",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "bac-listing",
+        "enlace": "/static/maquinas/bugbountylabs_listing.zip",
+        "categoria": "bac",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Listing",
+                "url": "https://writeups.bugbountylabs.com/bac-listing/listing-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Listing",
+                "url": "https://writeups.bugbountylabs.com/bac-listing/listing-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "Moto pasion",
+        "autor": "Pylon",
+        "nivel": "avanzado",
+        "dificultad": "advanced",
+        "puntos": 150,
+        "lab_id": "cmdi-basic",
+        "enlace": "https://mega.nz/file/7mYyHaKB#WvDXu6aEnFZDdyZBkfdV9tjhyLjUVAuL40qOCzBS20A",
+        "categoria": "ci",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de Moto pasion",
+                "url": "https://writeups.bugbountylabs.com/cmdi-basic/moto_pasion-guia"
+            },
+            {
+                "titulo": "Explicación técnica de Moto pasion",
+                "url": "https://writeups.bugbountylabs.com/cmdi-basic/moto_pasion-tecnico"
+            },
+            {
+                "titulo": "Write-up por manuel",
+                "url": "https://poc.curiosidadesdehackers.com/",
+                "autor": "manuel",
+                "fecha": "2025-05-09 15:39:35"
+            },
+            {
+                "titulo": "Write-up por wirte up de prueba",
+                "url": "https://poc.curiosidadesdehackers.com/",
+                "autor": "wirte up de prueba",
+                "fecha": "2025-05-09 15:40:16"
+            }
+        ]
+    },
+    {
+        "nombre": "El rincón del mongo",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "nosql-injection",
+        "enlace": "https://mega.nz/file/PuIgFZ7T#MiAdKTN2FFje_9fJu_JaIYbn34tNgwapdoIh6U7RpkE",
+        "categoria": "nosqli",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de El rincón del mongo",
+                "url": "https://writeups.bugbountylabs.com/nosql-injection/el_rincón_del_mongo-guia"
+            },
+            {
+                "titulo": "Explicación técnica de El rincón del mongo",
+                "url": "https://writeups.bugbountylabs.com/nosql-injection/el_rincón_del_mongo-tecnico"
+            }
+        ]
+    },
+    {
+        "nombre": "OTP",
+        "autor": "El Pinguino de Mario & Curiosidades De Hackers",
+        "nivel": "principiante",
+        "dificultad": "beginner",
+        "puntos": 100,
+        "lab_id": "mix",
+        "enlace": "/static/maquinas/bugbountylabs_otp.zip",
+        "categoria": "mix",
+        "writeups": [
+            {
+                "titulo": "Guía paso a paso de OTP",
+                "url": "https://writeups.bugbountylabs.com/mix/otp-guia"
+            },
+            {
+                "titulo": "Explicación técnica de OTP",
+                "url": "https://writeups.bugbountylabs.com/mix/otp-tecnico"
+            }
+        ]
+    }
+]

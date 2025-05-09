@@ -1,0 +1,2 @@
+{"autor": "pepe", "nombre_maquina": "la polla", "dificultad": "principiante", "categoria": "sqli", "email": "elrincondelhackeracademia@gmail.com", "mensaje": "eeee", "fecha": "2025-05-09 15:57:52"}
+{"autor": "prueba", "nombre_maquina": "prueba", "dificultad": "profesional", "categoria": "sqli", "email": "elrincondelhackeracademia@gmail.com", "mensaje": "https://poc.curiosidadesdehackers.com/", "fecha": "2025-05-09 15:58:39"}
