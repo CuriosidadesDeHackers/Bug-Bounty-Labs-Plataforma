@@ -36,18 +36,6 @@
             {
                 "titulo": "Explicación técnica de Reflection",
                 "url": "https://writeups.bugbountylabs.com/xss-stored-basic/reflection-tecnico"
-            },
-            {
-                "titulo": "Write-up por pollita",
-                "url": "pollita.com",
-                "autor": "pollita",
-                "fecha": "2025-05-10 11:54:57"
-            },
-            {
-                "titulo": "Write-up por pepe",
-                "url": "pepe.com",
-                "autor": "pepe",
-                "fecha": "2025-05-10 11:56:52"
             }
         ]
     },
@@ -68,13 +56,7 @@
             {
                 "titulo": "Explicación técnica de DogShow",
                 "url": "https://writeups.bugbountylabs.com/xss-basic/dogshow-tecnico"
-            },
-            {
-                "titulo": "Write-up por pepa",
-                "url": "pepe.com",
-                "autor": "pepa",
-                "fecha": "2025-05-10 12:52:01"
-            }
+            }   
         ]
     },
     {
@@ -94,18 +76,6 @@
             {
                 "titulo": "Explicación técnica de Escape",
                 "url": "https://writeups.bugbountylabs.com/xss-stored-basic/escape-tecnico"
-            },
-            {
-                "titulo": "Write-up por pepe",
-                "url": "pepe.com",
-                "autor": "pepe",
-                "fecha": "2025-05-10 12:07:52"
-            },
-            {
-                "titulo": "Write-up por pepe",
-                "url": "pepe.com",
-                "autor": "pepe",
-                "fecha": "2025-05-10 12:51:38"
             }
         ]
     },
@@ -186,12 +156,6 @@
             {
                 "titulo": "Explicación técnica de Frontend",
                 "url": "https://writeups.bugbountylabs.com/xss-stored-basic/frontend-tecnico"
-            },
-            {
-                "titulo": "Write-up por paco",
-                "url": "paco.com",
-                "autor": "paco",
-                "fecha": "2025-05-10 12:08:35"
             }
         ]
     },
@@ -292,12 +256,6 @@
             {
                 "titulo": "Explicación técnica de Entity",
                 "url": "https://writeups.bugbountylabs.com/xxe-basic/entity-tecnico"
-            },
-            {
-                "titulo": "Write-up por pepe",
-                "url": "pepe.com",
-                "autor": "pepe",
-                "fecha": "2025-05-10 09:46:22"
             }
         ]
     },
@@ -358,12 +316,6 @@
             {
                 "titulo": "Explicación técnica de Forgery",
                 "url": "https://writeups.bugbountylabs.com/csrf-forgery/forgery-tecnico"
-            },
-            {
-                "titulo": "Write-up por pepe",
-                "url": "pepe.com",
-                "autor": "pepe",
-                "fecha": "2025-05-10 12:03:17"
             }
         ]
     },
@@ -404,12 +356,6 @@
             {
                 "titulo": "Explicación técnica de Listing",
                 "url": "https://writeups.bugbountylabs.com/bac-listing/listing-tecnico"
-            },
-            {
-                "titulo": "Write-up por pepe",
-                "url": "polla.com",
-                "autor": "pepe",
-                "fecha": "2025-05-10 12:03:45"
             }
         ]
     },
@@ -430,24 +376,6 @@
             {
                 "titulo": "Explicación técnica de Moto pasion",
                 "url": "https://writeups.bugbountylabs.com/cmdi-basic/moto_pasion-tecnico"
-            },
-            {
-                "titulo": "Write-up por manuel",
-                "url": "https://poc.curiosidadesdehackers.com/",
-                "autor": "manuel",
-                "fecha": "2025-05-09 15:39:35"
-            },
-            {
-                "titulo": "Write-up por wirte up de prueba",
-                "url": "https://poc.curiosidadesdehackers.com/",
-                "autor": "wirte up de prueba",
-                "fecha": "2025-05-09 15:40:16"
-            },
-            {
-                "titulo": "Write-up por ssss",
-                "url": "https://poc.curiosidadesdehackers.com/",
-                "autor": "ssss",
-                "fecha": "2025-05-09T13:36:22.639Z"
             }
         ]
     },
