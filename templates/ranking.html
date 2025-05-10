@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ranking | Bug Bounty Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ranking de los mejores hackers en Bug Bounty Labs">
+    <meta property="og:title" content="Ranking | Bug Bounty Labs" />
+    <meta property="og:description" content="Descubre los mejores hackers y sus logros en Bug Bounty Labs." />
+    <meta property="og:image" content="https://bugbountylabs.com/wp-content/uploads/2025/01/Imagen-de-WhatsApp-2025-01-11-a-las-10.53.43_8c6b2f14.jpg" />
+    <meta property="og:url" content="https://bugbountylabs.com/ranking" />
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ranking | Bug Bounty Labs">
+    <meta name="twitter:description" content="Descubre los mejores hackers y sus logros en Bug Bounty Labs.">
+    <meta name="twitter:image" content="https://bugbountylabs.com/wp-content/uploads/2025/01/Imagen-de-WhatsApp-2025-01-11-a-las-10.53.43_8c6b2f14.jpg">
+    <link rel="icon" href="https://bugbountylabs.com/wp-content/uploads/2025/01/Imagen-de-WhatsApp-2025-01-11-a-las-10.53.43_8c6b2f14.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Modal para subir nuevos Write-ups -->
+<div id="upload-modal" style="display:none; position:fixed; top:15%; left:50%; transform:translateX(-50%); width:60%; background:#1e1e1e; color:#fff; padding:20px; border:2px solid #28a745; z-index:99999; border-radius:10px; box-shadow: 0 0 15px #000;">
+    <h3>Enviar nuevo Write-up</h3>
+    <input type="hidden" id="upload-lab-id">
+    <label>Autor:</label>
+    <input type="text" id="upload-autor" placeholder="Tu nombre o alias" style="width:100%;margin-bottom:10px;">
+    <label>URL del Write-up:</label>
+    <input type="text" id="upload-url" placeholder="https://..." style="width:100%;margin-bottom:10px;">
+    <div style="margin-top:15px;">
+        <button onclick="enviarWriteup()" style="padding:5px 15px;">Enviar</button>
+        <button onclick="cerrarUploadModal()" style="padding:5px 15px;">Cancelar</button>
+    </div>
+</div>
+
+
+<!-- Modal para Writeups -->
+<div id="writeup-modal" style="display:none; position:fixed; top:10%; left:50%; transform:translateX(-50%); width:80%; background:#1e1e1e; color:#fff; padding:20px; border:2px solid var(--accent); z-index:99999; border-radius:10px; box-shadow: 0 0 15px #000;">
+    <h3>Write-ups disponibles</h3>
+    <div id="writeup-contenido"></div>
+    <button onclick="closeModal()" style="margin-top:15px; padding:5px 10px;">Cerrar</button>
+</div>
+
+<nav>
+        <div class="nav-container">
+            <a href="https://bugbountylabs.com/">
+  <h1>Bug Bounty Labs</h1>
+</a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}" {% if request.path == '/' %}class="active"{% endif %}>Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn {% if request.path in ['/xss', '/sqli', '/cors', '/ssti', '/or', '/xss.html', '/sqli.html', '/cors.html', '/ssti.html', '/or.html'] %}active{% endif %}">Vulnerabilidades</a>
+                    <div class="dropdown-content">
+<a href="{{ url_for('xss') }}">Cross-Site Scripting (XSS)</a>
+<a href="{{ url_for('sqli') }}">SQL Injection</a>
+<a href="{{ url_for('cors') }}">CORS Misconfiguration</a>
+<a href="{{ url_for('ssti') }}">Server-Side Template Injection</a>
+<a class="active" href="{{ url_for('csrf') }}">Cross-Site Request Forgery (CSRF)</a>
+<a href="xxe.html">XML External Entity</a>
+<a href="rce.html">Remote Code Execution</a>
+<a href="subdomain.html">Subdomain Takeover</a>
+<a href="cache.html">Cache Poisoning</a>
+<a href="ssrf.html">Server-Side Request Forgery</a>
+<a href="idor.html">IDOR</a>                    </div>
+                </li>
+                <li><a href="{{ url_for('reglas') }}">Reglas</a></li>
+                <li><a href="{{ url_for('ranking') }}">Ranking</a></li>
+                <li><a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <style>
+        body {
+            background-color: #1E1E1E;
+            color: #FFFFFF; /* Asegura contraste */
+        }
+    </style>
+    
+    <main>
+        <section class="vulnerability-header">
+            <h1>Ranking Global</h1>
+            <p>Los mejores hackers de nuestra plataforma</p>
+        </section>
+
+ 
+
+                <!-- Ranking Table -->
+                <div class="ranking-table-container">
+                    <table class="ranking-table">
+                        <thead>
+                            <tr>
+                                <th>Posición</th>
+                                <th>Usuario</th>
+                                <th>Puntos</th>
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="user-cell">
+                                        <span>DaveHunter</span>
+                                    </div>
+                                </td>
+                                <td>8,900</td>
+                                <td><span class="level expert">Experto</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="user-cell">
+                                        <span>EveExploit</span>
+                                    </div>
+                                </td>
+                                <td>8,500</td>
+                                <td><span class="level professional">Profesional</span></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="writeup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="writeup-content"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Bug Bounty Labs</h3>
+                    <p>Plataforma líder en entrenamiento de seguridad web</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Nuetras Plataformas</h3>
+                    <ul>
+                        <li><a href="https://thehackerslabs.com/">The Hackers Labs</a></li>
+                        <li><a href="https://dockerlabs.es/">Docker Labs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        </a>
+                        <a href="https://t.me/BugBountyLabs" target="_blank" class="social-btn" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://x.com/bugbounty_labs" target="_blank" class="social-btn" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/bug-bounty-labs" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bugbountylabs" target="_blank" class="social-btn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.gg/cbWzNQd8JQ" target="_blank" class="social-btn" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bug Bounty Labs. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
