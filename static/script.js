@@ -4,6 +4,45 @@ document.addEventListener("DOMContentLoaded", function() {
     overlay.className = 'modal-overlay';
     document.body.appendChild(overlay);
 
+    // Mobile menu toggle functionality
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-container ul');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }
+        });
+
+        // Handle dropdowns in mobile view
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('.dropbtn');
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) {
+                            other.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+    }
+
     // Close modals when clicking overlay
     overlay.addEventListener('click', function() {
         const writeupModal = document.getElementById("writeup-modal");
@@ -34,6 +73,13 @@ document.addEventListener("DOMContentLoaded", function() {
             labInfos.forEach(info => {
                 info.classList.remove('active');
             });
+
+            // Also close mobile menu
+            if (menuToggle && navMenu) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
+            }
         }
     });
 
