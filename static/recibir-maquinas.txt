@@ -1,0 +1,1 @@
+{"autor": "pepe", "nombre_maquina": "pepe", "dificultad": "principiante", "categoria": "sqli", "email": "lekada3463@bamsrad.com", "mensaje": "e", "enlace": "https://bugbountylabs.com/", "fecha": "2025-05-09 18:28:54"}
